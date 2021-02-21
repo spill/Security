@@ -10,6 +10,9 @@ automated mass commands like; mass ban, mass delete. At this moment, the only co
 that are open to you are mass ban and mass delete, both systems that are triggered will result in a ban
 for the invoker.
 
+You will have to setup the anti grief to work with how your server functions, these will not be provided
+to you.
+
 ## How to use Anti Grief
 Anti Grief is a server-owner-only command and can be only controlled by the guild owner.
 The only person exempt from punishment from Anti Grief is the server owner.
@@ -44,11 +47,31 @@ After the 5th ban, the invoker will be banned from the server for flagging the a
 
 The subcommand time would be for setting the time that the invoker has to trigger to be punished.
 If a user bans X amount of users in under Y amount of time, Security bans them.
-
+Time would be the Y variable. 
 ```
 +antigrief time <massban/massdelete> <time>
 ```
 
+### Full Examples
+
+
+(1) Mass Ban Example 
+```
++antigrief limit massban 20
+
++antigrief time massban 1m
+```
+Explanation: If more than 20 users are banned by 1 person in under 1 minute, they will be banned
+for triggering anti grief. 
+
+(2) Mass Delete Example 
+```
++antigrief limit massdelete 5
+
++antigrief time massdelete 1m
+```
+Explanation: If more than 5 channels are deleted in under 1 minute, they will be banned for triggering
+anti grief.
 
 
 
