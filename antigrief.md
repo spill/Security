@@ -14,13 +14,18 @@ for the invoker.
 Anti Grief is a server-owner-only command and can be only controlled by the guild owner.
 The only person exempt from punishment from Anti Grief is the server owner.
 
-You'll notice upon setting up the system that you're open to configuring your limits and time.
+To properly use Security's Anti Grief, youll have to set your logchannel, time, and limit.
+
+Lastly, toggle once you've finished the configuration process.
 
 ```
 +help antigrief
 ```
 
-The subcommand limit would be for setting up the threshold. 
+### AntiGrief Limit
+
+The subcommand limit would be for setting up the threshold for bans.
+If a user bans passed the amount that you set, Security bans them.
 
 ```
 +antigrief limit <massban/massdelete> <amount>
@@ -33,6 +38,23 @@ Example:
 ```
 A threshold of 5 bans would have to be passed for the trigger system to function. 
 After the 5th ban, the invoker will be banned from the server for flagging the anti grief system.
+
+
+### AntiGrief Time
+
+The subcommand time would be for setting the time that the invoker has to trigger to be punished.
+If a user bans X amount of users in under Y amount of time, Security bans them.
+
+```
++antigrief time <massban/massdelete> <time>
+```
+
+
+
+
+
+
+
 
 
 
